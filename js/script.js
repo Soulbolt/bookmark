@@ -14,9 +14,9 @@ btn.addEventListener("click", (e) => {
   menu.classList.toggle("hidden");
 
   if (menu.classList.contains("flex")) {
-    logo.setAttribute("src", "./images/logo-bookmark-footer.svg");
+    logo.setAttribute("src", "images/logo-bookmark-footer.svg");
   } else {
-    logo.setAttribute("src", "./images/logo-bookmark.svg");
+    logo.setAttribute("src", "images/logo-bookmark.svg");
   }
 });
 
