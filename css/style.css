@@ -1169,6 +1169,9 @@ video {
 .open {
   transform: rotate(90deg);
   transform: translateY(0px);
+  position: fixed;
+  top: 50px;
+  right: 25px;
 }
 
 .open .hamburger-top {
@@ -1221,10 +1224,6 @@ video {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.focus\:outline:focus {
-  outline-style: solid;
 }
 
 .group:hover .group-hover\:text-red-500 {

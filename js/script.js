@@ -1,8 +1,24 @@
 const tabs = document.querySelectorAll(".tab");
 const panels = document.querySelectorAll(".panel");
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+const logo = document.getElementById("logo");
 
 // Tabs Menu Event Listener
 tabs.forEach((tab) => tab.addEventListener("click", onTabClick));
+
+// Hamburger Button Listener and function
+btn.addEventListener("click", (e) => {
+  btn.classList.toggle("open");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("hidden");
+
+  if (menu.classList.contains("flex")) {
+    logo.setAttribute("src", "./images/logo-bookmark-footer.svg");
+  } else {
+    logo.setAttribute("src", "./images/logo-bookmark.svg");
+  }
+});
 
 function onTabClick(e) {
   // Remove Active Class From All Tabs
